@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    app:cardCornerRadius="@dimen/_16dp"
+    app:cardElevation="8dp"
+    app:cardPreventCornerOverlap="false"
+    android:elevation="10dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/gradient">
+
+
+        <TextView
+            android:id="@+id/tripNameHistoryTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape_text"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#B4000000"
+            android:textSize="@dimen/_24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/tripDateHistoryTV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deleteTripHistoryIV" />
+
+        <TextView
+            android:id="@+id/tripDateHistoryTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:gravity="center"
+            android:background="@drawable/shape_text2"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tripNameHistoryTV" />
+
+        <TextView
+            android:id="@+id/tripTimeHistoryTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:background="@drawable/shape_text2"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tripNameHistoryTV"
+            app:layout_constraintEnd_toEndOf="@+id/tripDateHistoryTV"
+            app:layout_constraintStart_toStartOf="@+id/tripDateHistoryTV"
+            app:layout_constraintTop_toBottomOf="@+id/tripDateHistoryTV" />
+
+        <Button
+            android:id="@+id/showDetailsHistoryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/buttonshape"
+            android:text="@string/show_details"
+            android:textColor="#C1FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/showOnMapBtn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tripNameHistoryTV" />
+
+        <ImageView
+            android:id="@+id/deleteTripHistoryIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/quantum_ic_clear_grey600_24" />
+
+        <Button
+            android:id="@+id/showOnMapBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:text="@string/open_map"
+            android:textColor="#C8FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/showDetailsHistoryBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/showDetailsHistoryBtn"
+            app:layout_constraintTop_toTopOf="@+id/showDetailsHistoryBtn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

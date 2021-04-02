@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".ui.detailsTrip.DetailsTripActivity">
+
+    <TextView
+        android:id="@+id/tripNameDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/start_pint_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="24dp"
+        android:gravity="right"
+        android:text="@string/start_point"
+        android:textColor="@color/quantum_googblue900"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tripNameDetails" />
+
+    <View
+        android:id="@+id/start_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/quantum_googblue900"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_pint_text" />
+
+    <TextView
+        android:id="@+id/end_pint_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="right"
+        android:text="@string/distination_point"
+        android:textColor="@color/quantum_googblue900"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/startPlaceDetails"
+        app:layout_constraintTop_toBottomOf="@+id/start_view" />
+
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_text2"
+        android:drawableStart="@drawable/ic_time"
+        android:drawablePadding="@dimen/_8dp"
+        android:padding="@dimen/_8dp"
+        android:text="aaaa"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/calender_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/calender_text"
+        app:layout_constraintTop_toTopOf="@+id/calender_text" />
+
+    <View
+        android:id="@+id/end_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/quantum_googblue900"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/end_pint_text" />
+
+    <TextView
+        android:id="@+id/startPlaceDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/shape_text2"
+        android:drawableStart="@drawable/ic_add_location"
+        android:drawablePadding="@dimen/_8dp"
+        android:padding="@dimen/_8dp"
+        android:text="aaaaaaaa"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/start_pint_text"
+        app:layout_constraintStart_toEndOf="@+id/start_pint_text"
+        app:layout_constraintTop_toTopOf="@+id/start_pint_text" />
+
+    <TextView
+        android:id="@+id/endPlaceDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/shape_text2"
+        android:drawableStart="@drawable/ic_add_location"
+        android:drawablePadding="@dimen/_8dp"
+        android:padding="@dimen/_8dp"
+        android:text="aaaaaaa"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/end_pint_text"
+        app:layout_constraintStart_toEndOf="@+id/end_pint_text"
+        app:layout_constraintTop_toTopOf="@+id/end_pint_text" />
+
+    <TextView
+        android:id="@+id/calender_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape_text2"
+        android:drawableStart="@drawable/ic_calendar"
+        android:drawablePadding="@dimen/_8dp"
+        android:padding="@dimen/_8dp"
+        android:text="aaaa"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_24sp"
+        app:layout_constraintEnd_toStartOf="@+id/timer_text"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/end_view" />
+
+    <View
+        android:id="@+id/date_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/quantum_googblue900"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calender_text" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notesDetailsRV"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/statusDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_text"
+        android:padding="@dimen/_8dp"
+        android:text="aaaaaa"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/doneDetails"
+        app:layout_constraintEnd_toStartOf="@+id/doneDetails"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/doneDetails"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/doneDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/shape_text"
+        android:padding="@dimen/_8dp"
+        android:text="aaaaaaa"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/statusDetails" />
+
+    <TextView
+        android:id="@+id/textViewNoNotesDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="@dimen/_16dp"
+        android:text="Notes not found for this trip"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_view" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_text"
+        android:text="@string/our_notes"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

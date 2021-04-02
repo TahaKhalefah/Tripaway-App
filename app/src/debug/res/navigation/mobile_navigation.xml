@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_upcoming">
+
+    <fragment
+        android:id="@+id/nav_upcoming"
+        android:name="com.tahadroid.tripaway.ui.fragments.trips.TripsFragment"
+        android:label="@string/upcoming_trips"
+        tools:layout="@layout/fragment_trips" />
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.tahadroid.tripaway.ui.fragments.history.HistoryFragment"
+        android:label="@string/history_trips"
+        tools:layout="@layout/fragment_history" />
+
+</navigation>

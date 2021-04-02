@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_upcoming"
+            android:icon="@drawable/ic_travel_bag__1_"
+            android:title="@string/upcoming_trips" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_clock"
+            android:title="@string/history_trips" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_gps"
+            android:title="@string/history_on_map" />
+    </group>
+    <group
+        android:id="@+id/drawer_group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_switch"
+            android:icon="@drawable/ic_cloud_sync"
+            android:title="@string/async"
+            app:actionLayout="@layout/switch_menu" />
+
+    </group>
+    <group
+        android:id="@+id/drawer_group3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_language"
+            android:orderInCategory="100"
+            android:icon="@drawable/ic_language"
+            android:title="@string/english"
+            app:showAsAction="never" />
+    </group>
+    <group
+        android:id="@+id/drawer_group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_logout"
+            android:orderInCategory="100"
+            android:icon="@drawable/ic_arrow"
+            android:title="@string/logout"
+            app:showAsAction="never" />
+    </group>
+</menu>

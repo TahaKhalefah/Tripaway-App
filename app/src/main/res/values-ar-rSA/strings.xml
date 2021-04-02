@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">رحلتى</string>
+    <string name="action_settings">الاعدادات</string>
+    <string name="menu_home">الرئيسيه</string>
+    <string name="menu_gallery">المعرض</string>
+    <string name="title_activity_maps">الخريطه</string>
+    <string name="GOOGLE">استمر بواسطه جوجل</string>
+    <string name="logout">خروج</string>
+    <string name="upcoming_trips">الرحلات القادمه</string>
+    <string name="history_trips">رحلاتى السابقه</string>
+    <string name="history_on_map">الرحلات داخل الخريطه</string>
+    <string name="tripawy">رحلتى</string>
+    <string name="maps_splash">اينما تكون</string>
+    <string name="maps_splash2">"رحلتى يغطى عودتك "</string>
+    <string name="skip">تخطى</string>
+    <string name="sign_in_with_phone">دخول بواسطه الهاتف</string>
+    <string name="register">تسجيل</string>
+    <string name="confirm_password">تاكيد الرقم السرى</string>
+    <string name="password">الرقم السرى</string>
+    <string name="email">الايميل</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="start">ابدا</string>
+    <string name="done">تمت بنجاح</string>
+    <string name="show_details">عرض التفاصيل</string>
+    <string name="open_map">افتح الخريطه</string>
+    <string name="snooze">غفوة</string>
+    <string name="are_you_sure_you_want_to_delete_this_trip">هل انت متاكد انك تريد مسح هذه الرحله؟</string>
+    <string name="no">لا</string>
+    <string name="yes">نعم</string>
+    <string name="are_you_sure_you_want_to_add_this_trip">هل انت متاكد من اضافه هذه الرحله؟</string>
+    <string name="cancel">الغاء</string>
+    <string name="confirm">تاكيد</string>
+    <string name="enter_note_title">ادخل عنوان الملاحظه</string>
+    <string name="description">"الوصف ... "</string>
+    <string name="add">اضافه</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="continuee">استمر</string>
+    <string name="start_point">نقطه البدايه</string>
+    <string name="distination_point">الوجهه</string>
+    <string name="our_notes">ملاحظاتى</string>
+    <string name="async">تزامن</string>
+    <string name="change_language">تغير اللغه</string>
+    <string name="english">عربى</string>
+
+</resources>

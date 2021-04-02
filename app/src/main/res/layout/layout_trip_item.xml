@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    android:orientation="horizontal"
+    android:padding="@dimen/_8dp"
+    app:cardCornerRadius="@dimen/_16dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="8dp"
+    app:cardPreventCornerOverlap="false"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view15"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:alpha="0.7"
+            android:background="@drawable/gradient"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/deleteUpcomeIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/quantum_ic_clear_grey600_24" />
+
+
+        <TextView
+            android:id="@+id/tripNameUpcomeTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/shape_text"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textColorHint="#3F51B5"
+            android:textSize="22dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deleteUpcomeIV" />
+
+        <TextView
+            android:id="@+id/tripDescUpcomeTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/shape_text"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tripNameUpcomeTV" />
+
+        <TextView
+            android:id="@+id/tripDateUpcomeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/shape_text2"
+
+            android:fontFamily="serif"
+            android:gravity="start"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/updateUpcomeTripIV" />
+
+        <TextView
+            android:id="@+id/tripTimeUpcomeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/shape_text2"
+            android:fontFamily="serif"
+
+            android:gravity="start"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tripDateUpcomeTV"
+            app:layout_constraintStart_toEndOf="@+id/tripDateUpcomeTV"
+            app:layout_constraintTop_toTopOf="@+id/tripDateUpcomeTV"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/startUpcomeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/buttonshape"
+            android:fontFamily="serif"
+            android:text="@string/start"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/doneUpcomeBtn"
+            app:layout_constraintHorizontal_bias="0.317"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/addNoteUpcomeBtn"
+            android:layout_width="@dimen/_64dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/shapesmall"
+            android:fontFamily="serif"
+            android:paddingLeft="20dp"
+            android:text="\"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:icon="@drawable/ic_note_add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tripDescUpcomeTV" />
+
+        <Button
+            android:id="@+id/doneUpcomeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="56dp"
+            android:background="@drawable/buttonshape"
+            android:text="@string/done"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/startUpcomeBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEndAddress"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <View
+            android:id="@+id/view10"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/circle_shape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tripDescUpcomeTV" />
+
+        <View
+            android:id="@+id/view12"
+            android:layout_width="3dp"
+            android:layout_height="25dp"
+            android:background="#21CA28"
+            app:layout_constraintEnd_toEndOf="@+id/view10"
+            app:layout_constraintStart_toStartOf="@+id/view10"
+            app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+        <View
+            android:id="@+id/view13"
+            android:layout_width="3dp"
+            android:layout_height="15dp"
+            android:background="#FA0101"
+            app:layout_constraintBottom_toTopOf="@+id/view11"
+            app:layout_constraintEnd_toEndOf="@+id/view11"
+            app:layout_constraintStart_toStartOf="@+id/view11" />
+
+        <View
+            android:id="@+id/view11"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="#FA0101"
+            app:layout_constraintBottom_toTopOf="@+id/startUpcomeBtn"
+            app:layout_constraintEnd_toEndOf="@+id/view10"
+            app:layout_constraintStart_toStartOf="@+id/view10" />
+
+        <TextView
+            android:id="@+id/textViewStartAddess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shape_text2"
+            android:fontFamily="serif"
+
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view10"
+            app:layout_constraintStart_toEndOf="@+id/view10"
+            app:layout_constraintTop_toTopOf="@+id/view10" />
+
+        <TextView
+            android:id="@+id/textViewEndAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+
+            android:background="@drawable/shape_text2"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textColorHint="#3F51B5"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view11"
+            app:layout_constraintStart_toEndOf="@+id/view11"
+            app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+        <ImageView
+            android:id="@+id/updateUpcomeTripIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/deleteUpcomeIV"
+            app:srcCompat="@drawable/ic_edit_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
